@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronauta</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        .sideral{
-           position: relative;
-        }
-        .espaco{
-            position: absolute;
-            height: 104.2vh;
-        }
-        .astronauta{
-            position: absolute;
-            margin: 260px 0px;
-            left: 34%;
-        }
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      body{
+        background-color: black;
+        background-image: url(imagens/espaco.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .astronauta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform:translate(-50%, -50%);
+      }
     </style>
 </head>
 <body>
-   <div class="sideral">
-    <img src="imagens/espaco.jpg" alt="espaço" class="espaco">
-    <img src="imagens/astronauta.png" alt="astronauta" class="astronauta">
+   <section class="espaco">
+    <article class="astronauta"><img src="imagens/astronauta.png" alt="astronauta"></article>
+   </section>
    </div>
 </body>
 </html>
