@@ -20,7 +20,7 @@ h1{
 }
 
 menu{
-    display: block;
+    display: none;
 
 }
 
@@ -59,4 +59,16 @@ article p{
     margin-bottom: 20px;
     line-height: 25px;
     text-indent: 20px;
+}
+
+#burguer{
+    background-color: rgb(36, 35, 35);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#burguer:hover{
+    background-color: rgba(255, 255, 255, 0.691);
+    color: black;
 }
