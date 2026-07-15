@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="toggleMenu()">
+        menu
+        </span>
+        <h1>Meu Site</h1>
+        <nav id="menu">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste do Flexbox</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus veritatis, ducimus minus dolores explicabo odio aliquam eveniet soluta rem beatae? Perspiciatis, libero et. Obcaecati amet explicabo facilis architecto tenetur expedita repudiandae ducimus laboriosam aliquam dolores aut atque ipsam quibusdam ex tempora sit eos, beatae vero sapiente nihil nesciunt aliquid necessitatibus.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum laboriosam ea voluptatem doloremque saepe voluptates odit voluptate perspiciatis sequi facilis. Facere eos maiores enim vero reprehenderit et animi quibusdam labore?</p>
+    </main>
+
+    <script>
+      function toggleMenu(){
+    document.getElementById("menu").classList.toggle("ativo");
+}
+
+window.addEventListener("resize", () => {
+    const menu = document.getElementById("menu");
+
+    if(window.innerWidth > 550){
+        menu.classList.remove("ativo");
+    }
+});
+    </script>
+</body>
+</html>

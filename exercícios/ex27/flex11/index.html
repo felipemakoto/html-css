@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexible Box</title>
     <style>
-      
+
       .conteiner {
         background-color: lightcoral;
 
@@ -17,20 +17,31 @@
         background-color: lightseagreen;
         border: 1px solid black;
         text-align: center;
-        flex-basis: 120px;
+        flex-basis: 200px;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+
+      #a{
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+      #b{
+        flex-shrink: 1;
+        flex-grow: 3;
+      }
+      #c{
+        flex-shrink: 3;
+        flex-grow: 4;
       }
 
     </style>
   </head>
   <body>
     <div class="conteiner">
-      <div class="item">A</div>
-      <div class="item">Lorem, ipsum.</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quia.</div>
-      <div class="item">F</div>
-      <div class="item">Lorem ipsum dolor sit amet.</div>
+      <div class="item" id="a">A</div>
+      <div class="item" id="b">B</div>
+      <div class="item" id="c">C</div>
     </div>
   </body>
 </html>
