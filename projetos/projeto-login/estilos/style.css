@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* 
+    Paleta de Cores
+    verde: #49a09d
+    lilás: #5f2c82
+*/
+
+:root{
+    --corVerde: #49a09d;
+    --corVerdeAgua: #1b6d51;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--corVerde) ;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Página de Login */
+
+.login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
+    transition: 0.6s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+.imagem{
+    background: var(--corVerde) url(../imagens/themePhoto.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    display: block;
+}
+
+.form{
+    padding: 10px;
+    display: block;
+}
+
+.form h1{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.form p{
+    font-size: 0.9em;
+}
+
+/* Input Divs */
+
+form{
+    margin-top: 15px;
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input{
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(5, 90, 74);
+    width: 200px;
+    outline: none;
+   
+}
+
+input:focus ~ label, input:valid ~ label{
+    font-size: 12px;
+    top: -10px;
+    color: #49a09d;
+}
+
+input:focus{
+    box-shadow: 0 2px 4px -2px #49a09d;
+}
+
+.formInput{
+    position: relative;
+    margin-top: 15px;
+}
+
+.enviar{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--corVerdeAgua);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.forgotPassword{
+    color: #056547;
+}
+
+
+
+
+
+

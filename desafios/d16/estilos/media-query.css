@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+:root{
+    --corVerde: #49a09d;
+    --corVerdeAgua: #1b6d51;
+}
+
+/* 
+
+    Typical Device Breakpoints
+-------------------------------------
+Peqeunas telas: até 480px
+Celular: de 481px - 767px
+Tablet: 768px - 1024px
+Desktop: 1025px - 1200px
+Grandes Telas: 1201px para cima
+
+*/
+
+/* Tablet */
+@media screen and (min-width: 668px) and (max-width: 1024px)  { 
+    
+    body{
+        background-image: linear-gradient(to right, #49a09d, #358d8a, #1b6d51);
+    }
+    
+    
+    .login{
+        width: 90%;
+    }
+
+    .imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    .form{
+    float: right;
+    width: 70%;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .enviar{
+        width: 150px;
+        padding: 12px;
+        margin-right: 130px;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px){
+
+    body{
+        background-image: linear-gradient(to right, #49a09d, #358d8a, #1b6d51);
+    }
+
+    .login{
+        width: 850px;
+    }
+
+    .imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    .form{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .form h1{
+        font-size: 2em;
+    }
+
+    .form p{
+    font-size: 1.2em;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .enviar{
+        width: 150px;
+        padding: 12px;
+        margin-right: 130px;
+    }
+
+}
