@@ -36,7 +36,7 @@ body{
 header{
   background-color: var(--destaque);
   color: var(--texto);
-  padding: 10px;
+  padding: 15px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -58,6 +58,7 @@ header{
   font-weight: bold;
   padding: 12px 15px;
   border-radius: 5px;
+  font-size: 1.3em;
 }
 
 .menu a:hover{
@@ -136,6 +137,24 @@ article{
 article h2{
   color: var(--destaque);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+    
+  }
+
+  .ficha{
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+  }
+
+  .detalhes{
+    grid-column: 3 / 4;
+  }
 }
 
 /* Skill */
