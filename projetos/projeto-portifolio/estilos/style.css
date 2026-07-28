@@ -18,15 +18,18 @@
   transition-timing-function: ease-in-out;
 }
 
-html, body{
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  line-height: 1.5em;
-  background-color: var(--fundo-principal);
-  color: var(--texto);
-  scrollbar-width: auto;
+html{
+    scroll-behavior: smooth;
 }
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.5em;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+}
+
 
 /* Header */
 
@@ -34,6 +37,9 @@ header{
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
   display: flex;
   justify-content: flex-end;
@@ -202,7 +208,7 @@ article h2{
   color: var(--texto);
 }
 
-.formacao-container .instuicao{
+.formacao-container .instiuicao{
   color: var(--destaque-inverso);
   font-size: 1.1em;
 }

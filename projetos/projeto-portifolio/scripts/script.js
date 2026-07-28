@@ -16,7 +16,9 @@ function temaEscuro(tipo) {
   }
 }
 
-botao.addEventListener('click', () => {
+botao.addEventListener('click', (e) => {
+  e.preventDefault(); // Impede que o link recarregue a página
+
   const isescuro = body.classList.toggle('escuro');
   temaEscuro(isescuro);
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
